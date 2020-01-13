@@ -5,13 +5,11 @@ Example how to install in composer
             {
                 "type": "git",
                 "url": "https://github.com/vencendor/var-dumper.git",
-                "reference": "ven-master"
             }
         ],
 
         "require": {
             "symfony/var-dumper": "dev-vencendor",
-            "digitickets/lalit": "^3.1"
         }
 
     }
