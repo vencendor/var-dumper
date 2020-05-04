@@ -13,3 +13,22 @@ Resources
   * [Report issues](https://github.com/symfony/symfony/issues) and
     [send Pull Requests](https://github.com/symfony/symfony/pulls)
     in the [main Symfony repository](https://github.com/symfony/symfony)
+    
+    
+Composer example
+----------------
+
+    {
+      "repositories": [
+        {
+          "type": "git",
+          "url": "https://github.com/vencendor/var-dumper.git",
+          "reference": "ven-master"
+        }
+      ],
+
+      "require": {
+        "symfony/var-dumper": "dev-vencendor"
+      }
+    }
+
