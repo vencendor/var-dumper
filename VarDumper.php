@@ -30,9 +30,9 @@ class VarDumper
 
     public static function dump($var)
     {
-        
-        echo "<span style='border: 1px dotted #666; font-size:12px; padding: 4px 4px 4px 14px; '>" . debug_backtrace()[1]['file'] . ":" . debug_backtrace()[1]['line'] . "</span>";
-        
+
+        echo "<a href='phpstorm://open?url=file://" . debug_backtrace()[1]['file'] . "&line=" . debug_backtrace()[1]['line'] . "' style='border: 1px dotted #666; font-size:12px; padding: 4px 4px 4px 14px; '>" . debug_backtrace()[1]['file'] . ":" . debug_backtrace()[1]['line'] . "</a>";
+
         if (null === self::$handler) {
             $cloner = new VarCloner();
             $cloner->addCasters(ReflectionCaster::UNSET_CLOSURE_FILE_INFO);

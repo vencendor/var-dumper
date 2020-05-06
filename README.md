@@ -1,22 +1,3 @@
-Example how to install in composer 
-==================
-    {
-        "repositories": [
-            {
-                "type": "git",
-                "url": "https://github.com/vencendor/var-dumper.git",
-            }
-        ],
-
-        "require": {
-            "symfony/var-dumper": "dev-vencendor",
-        }
-
-    }
-
-
-
-
 VarDumper Component
 ===================
 
